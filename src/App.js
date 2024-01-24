@@ -1,8 +1,11 @@
+import MyNav from "./components/MyNav";
+// import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div >
-      <h1 className="text-4xl font-bold">hello world</h1>
+      <MyNav/>
+      {/* <NavBar/> */}
     </div>
   );
 }
