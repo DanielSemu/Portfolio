@@ -1,0 +1,17 @@
+.nav-menu{
+    background-color: black;
+}
+.nav-menu h1{
+    color: aliceblue;
+    font-size: 40px;
+}
+.logo{
+    padding: 10px 30px;
+}
+.lists{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    display: inline;
+
+}
