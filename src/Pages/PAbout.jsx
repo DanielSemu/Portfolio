@@ -1,6 +1,6 @@
 import React from 'react'
 import About from "./components/About";
-const About = () => {
+const PAbout = () => {
   return (
     <div>
       <About/>
@@ -8,4 +8,4 @@ const About = () => {
   )
 }
 
-export default About
+export default PAbout

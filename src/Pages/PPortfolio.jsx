@@ -1,6 +1,6 @@
 import React from 'react'
 import Porfolio from "./components/Porfolio";
-const Portfolio = () => {
+const PPortfolio = () => {
   return (
     <div>
       <Porfolio/>
@@ -8,4 +8,4 @@ const Portfolio = () => {
   )
 }
 
-export default Portfolio
+export default PPortfolio

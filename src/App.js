@@ -1,12 +1,12 @@
 // import MyNav from "./components/Mynav/MyNav";
 
 import NavBar from "./components/NavBar";
-import About from "./Pages/About";
+import PAbout from "./Pages/PAbout";
 
 
-import Home from "./Pages/Home";
+import PHome from "./Pages/PHome";
 import { Route, Routes } from "react-router";
-import Portfolio from "./Pages/Portfolio";
+import PPortfolio from "./Pages/PPortfolio";
 
 function App() {
   return (
@@ -14,9 +14,9 @@ function App() {
       {/* <MyNav/> */}
       <NavBar/>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/portfolio" element={<Portfolio/>}/>
+        <Route path="/" element={<PHome/>}/>
+        <Route path="/about" element={<PAbout/>}/>
+        <Route  path="/portfolio" element={<PPortfolio/>}/>
       </Routes>
 
     </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Home from "./components/Home";
 import SocialLinks from "./components/SocialLinks";
-const Home = () => {
+const PHome = () => {
   return (
     <div>
       <Home/>
@@ -10,4 +10,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default PHome
