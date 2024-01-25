@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const NavBar = () => {
@@ -8,22 +8,27 @@ const NavBar = () => {
     {
       id: 1,
       link: "home",
+      to:"/"
     },
     {
       id: 2,
       link: "about",
+      to:"about"
     },
     {
       id: 3,
       link: "portfolio",
+      to:"portfolio"
     },
     {
       id: 4,
       link: "experience",
+      to:"experiance"
     },
     {
       id: 5,
       link: "contact",
+      to:"contact"
     },
   ];
   return (
@@ -35,14 +40,15 @@ const NavBar = () => {
         <h1 className="text-5xl font-signature nl-2">Daniel</h1>
       </div>
       <ul className="hidden md:flex">
-        {links.map(({ id, link }) => {
+        {links.map(({to, id, link }) => {
           return (
             <li
               key={id}
               className="px-4 cursor-pointer capitalize font-medium
                 text-cyan-300 hover:scale-105 duration-200"
             >
-              {link}
+              <Link to={to}>{link}</Link>
+              
             </li>
           );
         })}

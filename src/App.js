@@ -1,20 +1,26 @@
 // import MyNav from "./components/Mynav/MyNav";
-import Home from "./components/Home";
+
 import NavBar from "./components/NavBar";
-import SocialLinks from "./components/SocialLinks";
-import About from "./components/About";
-import Porfolio from "./components/Porfolio";
+import About from "./Pages/About";
+
+
+import Home from "./Pages/Home";
+import { Route, Routes } from "react-router";
+import Portfolio from "./Pages/Portfolio";
 
 function App() {
   return (
     <div >
       {/* <MyNav/> */}
       <NavBar/>
-      <Home/>
-      <SocialLinks/>
-      <About/>
-      <Porfolio/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/portfolio" element={<Portfolio/>}/>
+      </Routes>
+
     </div>
+
   );
 }
 
