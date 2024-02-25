@@ -5,59 +5,74 @@ import lang3 from '../assets/lang3.jpg'
 import lang4 from '../assets/lang4.png'
 import lang5 from '../assets/lang5.png'
 import lang6 from '../assets/lang6.png'
-import lang7 from '../assets/lang7.png'
+import lang7 from '../assets/tailwind.png'
 import lang8 from '../assets/lang8.png'
+import lang9 from '../assets/lang9.png'
+import more from '../assets/more.png'
 const Experience = () => {
     const experience =[
         {
             id:1,
+            img:lang5,
+            title:"PYTHON",
+            style:'shadow-pink-500'
+        },
+        {
+            id:2,
+            img:lang4,
+            title:"JAVA SCRIPT",
+            style:'shadow-yellow-500'
+        },
+        {
+            id:3,
             img:lang1,
             title:"HTML",
             style:'shadow-orange-500'
         },
         {
-            id:2,
+            id:4,
+            img:lang6,
+            title:"REACT",
+            style:'shadow-blue-600'
+        },
+        {
+            id:5,
+            img:lang8,
+            title:"DJANGO",
+            style:'shadow-green-500'
+        },
+        {
+            id:6,
             img:lang2,
             title:"CSS",
             style:'shadow-blue-500'
         },
         {
-            id:3,
+            id:7,
             img:lang3,
             title:"JAVA",
             
             style:'shadow-orange-500'
         },
         {
-            id:4,
-            img:lang4,
-            title:"JAVA SCRIPT",
-            style:'shadow-yellow-500'
-        },
-        {
-            id:5,
-            img:lang5,
-            title:"PYTHON",
-            style:'shadow-pink-500'
-        },
-        {
-            id:6,
-            img:lang6,
-            title:"REACT",
-            style:'shadow-blue-600'
-        },
-        {
-            id:7,
+            id:8,
             img:lang7,
-            title:"BOOTSTRAP",
+            title:"TAILWIND CSS",
             style:'shadow-blue-500'
         },
         {
-            id:8,
-            img:lang8,
-            title:"DJANGO",
+            id:9,
+            img:lang9,
+            title:"PHP",
+            style:'shadow-pink-500'
+        },
+        {
+            id:10,
+            img:more,
+            title:"MORE",
             style:'shadow-green-500'
         },
+        
     ]
   return (
     <div name="experience" className='bg-gradient-to-b from-gray-800 to-black w-full h-screen'>

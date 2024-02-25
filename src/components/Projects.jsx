@@ -1,43 +1,50 @@
 import React from 'react'
 import port1 from '../assets/port1.png'
-import port2 from '../assets/port2.png'
-import port3 from '../assets/port3.png'
-import port4 from '../assets/port4.png'
-import port5 from '../assets/port5.png'
-import port6 from '../assets/port6.png'
+import port2 from '../assets/airline.jpg'
+import port3 from '../assets/notelist.png'
+import port4 from '../assets/taskmanager.png'
+import port5 from '../assets/gateway.png'
+import port6 from '../assets/DMS.jpg'
 const Porfolio = () => {
 
   const portfolios= [
+    {
+      id:6,
+      src:port6,
+      text: "React Portfolio Website Tutorial From Scratch | Responsive Portfolio Website Using React JS",
+      url:"https://github.com/DanielSemu/Dormitory_Managment_Sytstem_For_WKU/tree/master"
+    },
 {
   id:1,
   src:port1,
   text: "React Portfolio Website Tutorial From Scratch | Responsive Portfolio Website Using React JS",
+  url:"https://github.com/DanielSemu/E-Commerce"
 },
 {
   id:2,
   src:port2,
   text: "React Portfolio Website Tutorial From Scratch | Responsive Portfolio Website Using React JS",
+  url:"https://github.com/DanielSemu/AirLine_Reservation_System-Using-Java.git"
 },
 {
   id:3,
   src:port3,
   text: "React Portfolio Website Tutorial From Scratch | Responsive Portfolio Website Using React JS",
+  url:"https://github.com/DanielSemu/Notepad-Using-DjangoReact.git"
 },
 {
   id:4,
   src:port4,
   text: "React Portfolio Website Tutorial From Scratch | Responsive Portfolio Website Using React JS",
+  url:"https://github.com/DanielSemu/ToDoList-Django-React/tree/master"
 },
 {
   id:5,
   src:port5,
   text: "React Portfolio Website Tutorial From Scratch | Responsive Portfolio Website Using React JS",
+  url:"https://github.com/DanielSemu/Gateway_Apllication_for_AdiB.git"
 },
-{
-  id:6,
-  src:port6
-  , text: "React Portfolio Website Tutorial From Scratch | Responsive Portfolio Website Using React JS",
-}
+
   ]
   return (
     <div name="Projects" className='bg-gradient-to-b from-black to-gray-800 w-full  text-white md:h-screen '>
@@ -48,13 +55,12 @@ const Porfolio = () => {
         </div>
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-8'>
           {
-            portfolios.map(({id,src,text})=>(
+            portfolios.map(({id,src,text,url})=>(
               <div key={id} className='shadow-md shadow-gray-600 rounded-lg '>
             <img src={src}alt="" className='rounded-md duration-200 hover:scale-105'/>
             <p className='pt-7'>{text}</p>
             <div className='flex items-center justify-center'>              
-              <button className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>Demo</button>
-              <button className='w-fit px-9 py-3 m-4 rounded-md bg-gradient-to-r from-red-500 to-orange-500 cursor-pointer'>Code</button>
+              <a href={url} target='_blank' className='w-fit px-9 py-3 m-4 rounded-md bg-gradient-to-r from-red-500 to-orange-500 cursor-pointer'>Source Code</a>
             </div>
           </div>
             ))
