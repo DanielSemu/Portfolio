@@ -11,7 +11,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/daniel-semu-325579272/",
       style: "rounded-tr-md",
     },
     {
@@ -21,7 +21,7 @@ const SocialLinks = () => {
           Github <FaGithub size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "https://github.com/DanielSemu",
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const SocialLinks = () => {
           Mail <HiOutlineMail size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "mailto:danielsemu06@gmail.com",
     },
     {
       id: 4,
@@ -39,7 +39,7 @@ const SocialLinks = () => {
           Resume < BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "https://drive.google.com/file/d/1a7KZhNu6hQ-qMkEXqYDoiQA-JDC0gu78/view?usp=drive_link",
       download: true,
     },
   ];
@@ -52,7 +52,7 @@ const SocialLinks = () => {
               href={href}
               className="flex justify-between items-center w-full text-white "
             download={download}              
-            target=""
+            target="_blank"
             >
               {child}
             </a>

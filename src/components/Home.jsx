@@ -10,14 +10,14 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row ">
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">I'm Full Stack Developer</h2>
+          <h2 className="text-4xl sm:text-7xl font-bold  text-cyan-300">I'm Full Stack Developer</h2>
           <p className="text-gray-400 py-4 max-w-md">
             A Full Stack Developer is a versatile professional proficient in
             both front-end and back-end technologies, capable of developing
             end-to-end web applications. 
           </p>
           <div>
-            <Link to="portfolio" className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer ">
+            <Link to="Projects" smooth duration={500} className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer ">
               Portfolio
               <span className="group-hover:rotate-90 duration-300">
                 <FaLongArrowAltRight size={25} className="ml-1" />

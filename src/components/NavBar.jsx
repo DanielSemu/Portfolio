@@ -6,35 +6,25 @@ const NavBar = () => {
   const [nav, setNav] = useState(false);
   const links = [
     {
-      id: 1,
-      link: "home",
-   
+      id: 1, link: "home",
     },
     {
-      id: 2,
-      link: "about",
-      
+      id: 2,link: "about",   
     },
     {
-      id: 3,
-      link: "portfolio",
-   
+      id: 3,link: "Projects",
     },
     {
-      id: 4,
-      link: "experience",
-      
+      id: 4,link: "experience",
     },
     {
-      id: 5,
-      link: "contact",
-      
+      id: 5,link: "contact",
     },
   ];
   return (
     <div
       className="flex justify-between items-center w-full
-    h-20 px-4 text-white bg-black fixed"
+    h-20 px-4  text-cyan-300 bg-black fixed"
     >
       <div>
         <h1 className="text-5xl font-signature nl-2">Daniel</h1>
