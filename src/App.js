@@ -12,12 +12,20 @@ function App() {
   return (
     <div >
       <NavBar/>
-      <Home/>
+      <main className="main">
+        <Home/>
+        <SocialLinks/>
+        <About/>
+        <Porfolio/>
+        <Experience/>
+        <Contact/>
+      </main>
+      {/* <Home/>
       <SocialLinks/>
       <About/>
       <Porfolio/>
       <Experience/>
-      <Contact/>
+      <Contact/> */}
     </div>
 
   );

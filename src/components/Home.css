@@ -1,0 +1,64 @@
+/* Home Styles */
+.home-container {
+   
+    width: 100%;
+    background: linear-gradient(to bottom, #000000, #4b5563);
+    padding-top: 3rem;
+    margin-top: 50px;
+}
+
+.content-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.hero-text {
+    text-align: center;
+    color: #68d391;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.hero-description {
+    max-width: 30rem;
+    color: #cbd5e0;
+    margin-bottom: 2rem;
+}
+
+.btn-portfolio {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    background: linear-gradient(to right, #68d391, #63b3ed);
+    color: #fff;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-portfolio:hover {
+    background: linear-gradient(to right, #48bb78, #4299e1);
+}
+
+.hero-image {
+    border-radius: 1rem;
+    width: 80%;
+    max-width: 700px;
+    height: auto;
+}
+
+.fa-arrow {
+    transition: transform 0.3s ease;
+}
+
+.group:hover .fa-arrow {
+    transform: rotate(90deg);
+}

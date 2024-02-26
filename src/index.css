@@ -11,3 +11,8 @@
         font-family: 'Raleway', sans-serif;
     }
 }
+.main{
+    background: linear-gradient(to bottom, #000000, #4b5563);
+    width: 100%;
+    color: white;
+}
