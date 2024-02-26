@@ -3,6 +3,7 @@
     width: 100%;
     color: white;
     margin-top: 3rem;
+    z-index: 10;
 }
 
 .experience-content {
@@ -45,6 +46,10 @@
     border-left: 2px solid  #f687b3;
     padding: 1rem;
     transition: transform 0.3s ease;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .grid-item:hover {

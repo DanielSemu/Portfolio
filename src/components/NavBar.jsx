@@ -27,7 +27,7 @@ const NavBar = () => {
     h-20 px-4  text-cyan-300 bg-black fixed"
     >
       <div>
-        <h1 className="text-5xl font-signature nl-2">Daniel</h1>
+        <h1 className="text-3xl font-signature nl-2 md:text-4xl">Daniel</h1>
       </div>
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => {
@@ -47,7 +47,7 @@ const NavBar = () => {
         onClick={() => setNav(!nav)}
         className="cursor-pointer pr-4 z-10 text-cyan-300 md:hidden" 
       >
-        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+        {nav ? <FaTimes size={20} /> : <FaBars size={20} />}
       </div>
       { nav && 
       <ul className="flex flex-col justify-center
@@ -59,8 +59,8 @@ const NavBar = () => {
           return (
             <li
               key={id}
-              className="py-4 cursor-pointer capitalize font-medium
-                text-cyan-300 text-4xl hover:scale-105 duration-200"
+              className="py-3 cursor-pointer capitalize font-medium
+                text-cyan-300 text-xl hover:scale-105 duration-200"
             >
               <Link onClick={()=>setNav(!nav)} to={link} smooth duration={500}>{link}</Link>
             </li>
